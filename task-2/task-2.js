@@ -15,7 +15,7 @@ const reducer = (memo, value) => {
 };
 
 function promiseReduce(asyncFunctions, reduce, initialValue) {
-	if (!asyncFunctions.length) {
+	if (asyncFunctions.length === 0) {
 		return initialValue;
 	}
 
@@ -25,7 +25,7 @@ function promiseReduce(asyncFunctions, reduce, initialValue) {
 	return promise.then(res => {
 		const result = reduce(initialValue, res);
 
-		if (!asyncFunctions.length) {
+		if (asyncFunctions.length === 0) {
 			return Promise.resolve(result);
 		} else {
 			return promiseReduce(asyncFunctions, reduce, result);
@@ -33,4 +33,4 @@ function promiseReduce(asyncFunctions, reduce, initialValue) {
 	});
 }
 
-promiseReduce([fn1, fn2], reducer, 1).then(console.log);
+promiseReduce([fn1, fn2], reducer, 0).then(console.log);
