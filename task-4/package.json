@@ -1,0 +1,20 @@
+{
+  "name": "tree",
+  "version": "1.0.0",
+  "description": "module for tree command",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "tree": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Joichiro/ketov-daniil-otus.git"
+  },
+  "author": "d.ketov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joichiro/ketov-daniil-otus/issues"
+  },
+  "homepage": "https://github.com/Joichiro/ketov-daniil-otus#readme"
+}
