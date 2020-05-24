@@ -2,6 +2,7 @@ const getPath = el => {
     let path = [];
     while (
         el !== null &&
+        el.nodeName !== null &&
         el.nodeName.toLowerCase() !== 'body' &&
         path.unshift(
             el.nodeName.toLowerCase() +
