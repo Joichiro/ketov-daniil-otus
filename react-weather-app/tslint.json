@@ -1,0 +1,21 @@
+{
+    "defaultSeverity": "error",
+    "extends": ["tslint:latest", "tslint-react", "tslint-sonarts", "tslint-config-airbnb", "tslint-config-prettier"],
+    "jsRules": {},
+    "rules": {
+        "import-name": false,
+        "variable-name": false,
+        "no-any": true,
+        "jsx-no-lambda": false,
+        "prefer-array-literal": false,
+        "object-shorthand-properties-first": false,
+        "react-hooks/exhaustive-deps": false
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+        "exclude": [
+            "src/serviceWorker.ts",
+            "src/setupTests.ts"
+        ]
+    }
+}

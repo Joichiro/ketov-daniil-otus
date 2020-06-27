@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <script type="text/javascript">
+        const p = window.location.pathname.replace("/weatherApp/", "/");
+
+        localStorage.setItem("404", p);
+        window.location.replace("/weatherApp");
+    </script>
+</head>
+<a href="/weatherApp">click to go to the app</a>
+<body>
+</body>
+</html>
