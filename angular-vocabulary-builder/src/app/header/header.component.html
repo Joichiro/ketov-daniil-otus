@@ -1,0 +1,14 @@
+<div>
+  <h1 class="mat-active">
+    #словучить
+  </h1>
+  <nav mat-tab-nav-bar color="warn" backgroundColor="primary">
+    <a mat-tab-link
+       *ngFor="let link of navLinks"
+       [routerLink]="link.path"
+       routerLinkActive #rla="routerLinkActive"
+       [active]="rla.isActive">
+      {{link.label}}
+    </a>
+  </nav>
+</div>

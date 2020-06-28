@@ -1,0 +1,11 @@
+button {
+  width: 140px;
+}
+
+.clear-button {
+  width: 150px;
+}
+
+mat-form-field:nth-child(odd) {
+  margin-right: 2em;
+}
